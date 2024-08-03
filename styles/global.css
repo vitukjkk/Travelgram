@@ -15,7 +15,7 @@
 
     --font-family: "Poppins", sans-serif;
     --text-lg: bold 32px/125% var(--font-family);
-    --text: ;
+    --text: 16px/1.5 var(--font-family);
     --text-md: 14px/175% var(--font-family);
     --text-sm: 12px/175% var(--font-family);
 }
@@ -34,9 +34,28 @@ body {
     font-style: normal;
   }
   
-  .poppins-bold {
+.poppins-bold {
     font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-style: normal;
-  }
+}
   
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: var(--brand-color);
+    text-decoration: underline;
+}
+
+.container {
+    padding-inline: 32px;
+    max-width: 1280px;
+    margin-inline: auto;
+}
+
+.bg-surface-color {
+    background-color: var(--surface-color);
+}
